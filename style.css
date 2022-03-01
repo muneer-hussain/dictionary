@@ -1,0 +1,94 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 99vh;
+        background-color: #4d59fb;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #dictionary-wrapper {
+        background-color: white;
+        width: 38vw;
+        height: fit-content;
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+    
+    #dictionary-heading {
+        text-align: center;
+    }
+    
+    #search {
+        width: 30vw;
+        height: 35px;
+        margin-top: 20px;
+        border: 3px solid #000;
+        border-radius: 15px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #input {
+        text-align: center;
+    }
+    
+    #definition-wrapper,
+    #example-wrapper {
+        background-color: rgba(128, 128, 128, 0.274);
+        padding: 10px 20px;
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #name {
+        margin: 20px;
+        margin-left: 50px;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    .fa-search {
+        margin-left: -3vw;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    #voice-btn {
+        font-size: 30px;
+        color: #2e2e2e;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 550px) {
+        #dictionary-wrapper {
+            width: 80vw;
+        }
+        #search {
+            width: 60vw;
+        }
+        .fa-search {
+            margin-left: -9vw;
+        }
+        #voice-btn {
+            font-size: 20px;
+        }
+        #name {
+            margin: 18px;
+            margin-left: 8px;
+            font-size: 19px;
+        }
+        #definition-wrapper,
+        #example-wrapper {
+            font-size: 19px;
+        }
+    }
